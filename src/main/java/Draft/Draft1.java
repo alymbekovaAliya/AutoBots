@@ -15,6 +15,8 @@ public class Draft1 {
         System.out.println(square(list));
     }
 
+
+
     public List<Integer> square56(List<Integer> nums) {
       nums.replaceAll(n -> (n * n) + 10);
       return nums.stream().filter(n -> n % 10 != 5 && n % 10 != 6).collect(Collectors.toList());
